@@ -1,7 +1,9 @@
+:root {
+  --link-color: #00acdc;
+}
+
 body {
   margin: 0;
-
-  --link-color: #00acdc;
 }
 
 ul {
@@ -31,17 +33,20 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  list-style: none;
   justify-content: space-between;
 }
 
 .link__item {
+  display: flex;
   font-family: Roboto, sans-serif;
   position: relative;
   text-transform: uppercase;
-  align-content: center;
-  list-style: none;
+  align-items: center;
   height: 60px;
   font-size: 12px;
+  padding: 0;
+  margin: 0;
 }
 
 .link__item:hover,
@@ -49,7 +54,7 @@ ul {
   color: var(--link-color);
 }
 
-.link__list .link__item:not(:first-child) {
+.link__list > li:not(:first-child) {
   margin-left: 20px;
 }
 

@@ -1,5 +1,7 @@
 body {
   margin: 0;
+
+  --link-color: #00acdc;
 }
 
 ul {
@@ -48,7 +50,7 @@ ul {
 
 a:hover,
 .is-active {
-  color: #00acdc;
+  color: var(--link-color);
 }
 
 .link__item.is-active::after {
@@ -56,7 +58,7 @@ a:hover,
   content: '';
   position: absolute;
   bottom: 0;
-  background-color: #00acdc;
+  background-color: var(--link-color);
   height: 4px;
   width: 100%;
   border-radius: 8px;

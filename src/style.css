@@ -44,13 +44,13 @@ ul {
   font-size: 12px;
 }
 
-.link__list .link__item:not(:first-child) {
-  margin-left: 20px;
-}
-
-.link_list:hover,
+.link__item:hover,
 .is-active {
   color: var(--link-color);
+}
+
+.link__list .link__item:not(:first-child) {
+  margin-left: 20px;
 }
 
 .link__item.is-active::after {
